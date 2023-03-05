@@ -1,0 +1,12 @@
+.navBarp{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 45px;
+  padding-right: 8px;
+  background-color: #282c34;
+}
+.button-login{
+  height: 30px;
+}
