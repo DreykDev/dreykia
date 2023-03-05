@@ -1,14 +1,12 @@
-import React from 'react'
-//import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import NavBar from '../components/navBar.jsx'
+import Main from '../components/main.jsx'
 
-
-import Body from './Body.jsx'
 const App = () => {
-
 
   return (
     <>
-      <Body/>
+      <NavBar/>
+      <Main/>
     </>
   );
 }

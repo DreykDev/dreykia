@@ -11,7 +11,15 @@ const NavBar = () => {
   return (
     <nav className='navBarp'>
 
-    <button onClick={() => loginWithRedirect()}>login</button>
+      <button
+      className='button-login'
+      onClick={()=>loginWithRedirect({
+        authorizationParams: {
+        redirect_uri: "http://localhost:3000"},
+      })}
+      >
+        Log In
+      </button>
 
       <LogoutButton/>
 

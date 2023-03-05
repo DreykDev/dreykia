@@ -1,20 +1,18 @@
-import logo from '../images/logo.svg';
-import dydJpeg from '../images/dk.jpeg'
+import dydJpeg from '../images/dk.jpeg';
 import '../style/main.css';
-import { Profile } from '../pages/Profile';
+import { Profile } from './Profile';
 
 const Main = () => {
   return (
     <div className="main">
-      <div className="main-content">
+      <header className="main-content">
         <h1>
-          Dreyk
+          dreyk
         </h1>
         <div className='main_images'>
-          <img src={dydJpeg} className="dydJpeg" alt='logo_image_dreykdev' />
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={dydJpeg} className="dydJpeg" alt="logo" />
         </div>
-      </div>
+      </header>
       <Profile/>
     </div>
   );
