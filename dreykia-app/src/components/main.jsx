@@ -1,24 +1,20 @@
 import logo from '../images/logo.svg';
-import '../style/App.css';
-import { Profile } from './Profile';
+import dydJpeg from '../images/dk.jpeg'
+import '../style/main.css';
+import { Profile } from '../pages/Profile';
 
 const Main = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          **{process.env.REACT_APP_DOMAIN}**
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div className="main-content">
+        <h1>
+          Dreyk
+        </h1>
+        <div className='main_images'>
+          <img src={dydJpeg} className="dydJpeg" alt='logo_image_dreykdev' />
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+      </div>
       <Profile/>
     </div>
   );
