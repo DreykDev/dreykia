@@ -1,28 +1,33 @@
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from 'react';
-import {useAuth0} from "@auth0/auth0-react"
+import {Link} from 'react-router-dom'
+import { useAuth0 } from '@auth0/auth0-react'
+
 import '../style/navBar.css'
-import { LogoutButton } from '../utilities/LogOut';
+
+import { ButtonLogOut } from '../utilities/ButtonLogOut';
+import { ButtonLogIn } from '../utilities/ButtonLogIn';
+
 
 
 const NavBar = () => {
-  const {loginWithRedirect} = useAuth0();
+
+  const { isAuthenticated } = useAuth0();
 
   return (
     <nav className='navBarp'>
 
-      <button
-      className='button-login'
-      onClick={()=>loginWithRedirect({
-        authorizationParams: {
-        redirect_uri: "http://localhost:3000"},
-      })}
-      >
-        Log In
-      </button>
+      <Link to="/" className='home-button'><p>Home</p></Link>
 
-      <LogoutButton/>
+      <Link to="/locations" className='locations-icon'><label></label></Link>
+      <Link to="/profile" className='profile-icon'><label>󰀄</label></Link>
 
+
+      {isAuthenticated ? (
+        <ButtonLogOut/>
+      ):(
+        <ButtonLogIn/>
+      )}
     </nav>
   );
 };

@@ -1,14 +1,15 @@
-import NavBar from '../components/navBar.jsx'
+import React from 'react'
+
 import Main from '../components/main.jsx'
 
-const Body = () => {
-
-  return (
-    <>
-      <NavBar/>
-      <Main/>
-    </>
-  );
+class Body extends React.Component {
+  render(){
+    return (
+      <>
+        <Main/>
+      </>
+    )
+  }
 }
 
 export default Body;

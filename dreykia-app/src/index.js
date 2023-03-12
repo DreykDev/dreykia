@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import {Auth0Provider} from '@auth0/auth0-react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style/index.css';
-import App from './pages/App.js';
+import App from './pages/App.jsx';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

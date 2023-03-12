@@ -1,12 +1,35 @@
 .navBarp{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: 45px;
   padding-right: 8px;
-  background-color: #282c34;
+  background-color: #131518;
+  padding: 10px;
 }
-.button-login{
-  height: 30px;
+
+.home-button{
+  text-decoration: none;
+  width: auto;
+  height: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.locations-icon,
+.profile-icon{
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.profile-icon label{
+  font-size: 38px;
+  text-align: center;
+}
+.locations-icon label{
+  font-size: 24px;
 }
