@@ -8,6 +8,6 @@ export const ButtonLogIn = () => {
 
   return <button className="button" onClick={() => loginWithRedirect({
     authorizationParams: {
-    redirect_uri: "http://localhost:3000"},
+    redirect_uri: window.location.origin},
   })}>Login</button>;
 };
