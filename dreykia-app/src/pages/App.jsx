@@ -6,6 +6,7 @@ import NavBar from '../components/navBar.jsx'
 import Body from './Body.jsx'
 import LogIn from './LogIn.jsx'
 import Profile from './Profile.jsx'
+import Locations from './Locations.jsx';
 
 const App = () => {
 
@@ -21,9 +22,13 @@ const App = () => {
             <>
             <Route path="/" element={<Body />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/locations" element={<Locations/>} />
             </>
           ) : (
-            <Route path="/login" element={<LogIn/>}/>
+            <>
+            <Route path="/login" element={<LogIn />} />
+            <Route path="/locations" element={<Locations />} />
+            </>
           )}
         </Routes>
       </BrowserRouter>
